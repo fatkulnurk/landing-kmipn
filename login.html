@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/bulma/css/bulma.min.css" media="all">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style type="text/css">
+        @font-face {
+            font-family: Montserrat-Bold;
+            src: url(font/Montserrat-Regular.ttf);
+        }
+        @font-face {
+            font-family: Montserrat-Regular;
+            src: url(font/Montserrat-Regular.ttf);
+        }
+        *,body,html,html > *, body > *{
+            color: white;
+            font-family: Montserrat-Regular;
+        }
+        .awalan{
+            background: url('images/header-1.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .tengah{
+            background: url("images/centered.png");
+            background-position: top;
+            background-size: cover;
+            padding-bottom: 3px;
+            padding-right: 3px;
+        }
+        .bawah{
+            background: url("images/footer.png");
+            background-position: top;
+            background-size: cover;
+            padding-bottom: 3px;
+            padding-right: 3px;
+        }
+        .newline{
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        nav{
+            height: 90px;
+        }
+
+        .box {
+            margin-top: 5rem;
+        }
+        .avatar {
+            margin-top: -70px;
+            padding-bottom: 20px;
+        }
+        .avatar img {
+            padding: 5px;
+            background: #fff;
+            border-radius: 50%;
+            -webkit-box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+            box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+        }
+        input {
+            font-weight: 300;
+        }
+        p {
+            font-weight: 700;
+        }
+        p.subtitle {
+            padding-top: 1rem;
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+<body>
+<section class="hero is-transparent is-fullwidth awalan">
+    <div class="hero-head has-navbar-fixed-top">
+        <nav class="navbar is-fresh is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="#">
+                        <img src="images/logo/ristekdikti.png" alt="Logo" width="88" height="100">
+                    </a>
+                    <!--
+                    <a class="navbar-item" href="#">
+                        <img src="images/logo/ristekdikti.png" alt="Logo" width="88" height="100">
+                    </a>
+                    <a class="navbar-item" href="#">
+                        <img src="images/logo/ristekdikti.png" alt="Logo" width="88" height="100">
+                    </a>
+                    -->
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div  id="navbarExampleTransparentExample" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="index.html" class="navbar-item has-text-weight-bold has-text-light">BERANDA</a>
+                        <a href="tentang.html" class="navbar-item has-text-weight-bold has-text-light">TENTANG</a>
+                        <a href="lomba.html" class="navbar-item has-text-weight-bold has-text-light">LOMBA</a>
+                        <a href="info.html" class="navbar-item has-text-weight-bold has-text-light">INFO</a>
+                        <a href="login.html" class="navbar-item has-text-weight-bold has-text-light">
+                            <span class="button is-danger">
+                                LOGIN
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="hero-body"></div>
+</section>
+
+<section class="hero tengah is-fullheight is-transparent is-fullwidth">
+    <div class="hero-body">
+        <div class="container">
+            <div class="column is-8 is-offset-2 has-text-centered-mobile">
+                <h3 class="title has-text-white is-3 is-uppercase">Login</h3>
+                <div class="">
+                    <form>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-medium has-text-weight-bold" type="email" placeholder="Your Email" autofocus="">
+                             </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-medium has-text-weight-bold" type="password" placeholder="Your Password">
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-6">
+                                <p>Belum Pjnya akun, daftar aja disini.</p>
+                            </div>
+                            <div class="column is-6">
+                                <div class="field is-grouped is-grouped-right">
+                                    <div class="control">
+                                        <button class="button is-white">Forgot Password</button>
+                                    </div>
+                                    <div class="control">
+                                        <button class="button is-white">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+</section>
+
+<!--<footer class="footer is-light is-fullwidth">-->
+    <!--<div class="container">-->
+        <!--<div class="columns">-->
+            <!--<div class="column is-6 has-text-left">-->
+                <!--<p>-->
+                    <!--<img src="images/logoHD.png" width="125">-->
+                <!--</p>-->
+            <!--</div>-->
+            <!--<div class="column is-6 has-text-right">-->
+                <!--<div class="content">-->
+                    <!--<a class="button is-black">-->
+                        <!--<span class="icon has-text-danger">-->
+                          <!--<i class="fab fa-facebook-square"></i>-->
+                        <!--</span>-->
+                    <!--</a>-->
+                    <!--<a class="button is-black">-->
+                        <!--<span class="icon has-text-danger">-->
+                          <!--<i class="fab fa-twitter"></i>-->
+                        <!--</span>-->
+                    <!--</a>-->
+                    <!--<a class="button is-black">-->
+                        <!--<span class="icon has-text-danger">-->
+                          <!--<i class="fab fa-instagram"></i>-->
+                        <!--</span>-->
+                    <!--</a>-->
+                    <!--<a class="button is-black">-->
+                        <!--<span class="icon has-text-danger">-->
+                          <!--<i class="fab fa-youtube"></i>-->
+                        <!--</span>-->
+                    <!--</a>-->
+                    <!--<a class="button is-black">-->
+                        <!--<span class="icon has-text-danger">-->
+                          <!--<i class="fab fa-line"></i>-->
+                        <!--</span>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="columns">-->
+            <!--<div class="column is-6">-->
+                <!--<h3 class="title is-3 is-uppercase">Sponsor</h3>-->
+            <!--</div>-->
+            <!--<div class="column is-6">-->
+                <!--<h3 class="title is-3 is-uppercase">Media Partner</h3>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<hr class="navbar-divider">-->
+        <!--<p>-->
+            <!--<span class="has-text-black is-uppercase">&copy; KMIPN 2018 - Teknik Informatika Politeknik Elektronika Negeri Surabaya</span>-->
+        <!--</p>-->
+    <!--</div>-->
+<!--</footer>-->
+<script src="js/navbar.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
